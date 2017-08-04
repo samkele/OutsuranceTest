@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FedGroupTest")]
+[assembly: AssemblyTitle("OutsuranceFilePrinter")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FedGroupTest")]
+[assembly: AssemblyProduct("OutsuranceFilePrinter")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bf0da085-95ae-4d1c-b253-a7665f850d91")]
+[assembly: Guid("460bc6ed-81a3-4919-862c-a6f43220e282")]
 
 // Version information for an assembly consists of the following four values:
 //
