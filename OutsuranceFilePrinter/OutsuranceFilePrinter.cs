@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -104,7 +105,9 @@ namespace OutsuranceFilePrinter
                                   pair.Key
                                   select pair;
 
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Names.txt"))
+
+            using (StreamWriter file = new StreamWriter(
+                Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()) + "\\Debug\\Names.txt"))
             {
                 foreach (KeyValuePair<string, int> kvp in SortedWordCount)
                 {
@@ -154,7 +157,11 @@ namespace OutsuranceFilePrinter
 
           }
 
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Addresses.txt"))
+         string s2 =  Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()) + "\\Debug\\Addresses.txt";
+
+
+            using (StreamWriter file = new StreamWriter(
+                 Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()) + "\\Debug\\Addresses.txt"))
             {
                 foreach (string address in SortedStreetNameList)
                 {
